@@ -1349,7 +1349,7 @@
         setTimeout(() => {
             if (id === ballUnder) {
                 playerBalance += currentBet;
-                scoreButton.textContent = ℹ️  `${playerBalance} ₽`;
+                scoreButton.textContent = `${playerBalance} ₽`;
                 NotificationManager.showNotification(` + ${currentBet} ₽`, 1500);
             } else {
                 playerBalance -= currentBet;
