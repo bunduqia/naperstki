@@ -11,7 +11,7 @@
 еле заметные что с продолжительной игрой
 создает впечатление что она живая.
 
-<div class="Box-sc-g0xbh4-0 bDycpP"><iframe alt="Game" src="https://bunduqia.github.io/naperstki" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm"></div>
+https://bunduqia.github.io/naperstki
  
     
      
