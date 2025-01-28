@@ -10,4 +10,8 @@
 удачи ,в игре есть скрытые имоции у девушки.
 еле заметные что с продолжительной игрой
 создает впечатление что она живая.
-https://bunduqia.github.io/naperstki/
+
+<div style="text-align: center; margin-top: 20px;">
+  <iframe src="https://bunduqia.github.io/naperstki/" width="600" height="400" style="border: 2px solid black;"></iframe>
+</div>
+
