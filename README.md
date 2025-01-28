@@ -11,7 +11,27 @@
 еле заметные что с продолжительной игрой
 создает впечатление что она живая.
 
-<div style="text-align: center; margin-top: 20px;">
-  <iframe src="https://example.com/path/to/your/game" width="800" height="600" style="border: 2px solid black;"></iframe>
-</div>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя игра</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        iframe {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://bunduqia.github.io/naperstki/" width="800" height="600"></iframe>
+</body>
+</html>
