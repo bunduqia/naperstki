@@ -1,4 +1,4 @@
-Игра Наперсики 
+Игра Наперстики 
 
 <div class="Box-sc-g0xbh4-0 bDycpP"><img alt="fon.png" src="https://github.com/bunduqia/naperstki/blob/main/assets/www/fon.png?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm"></div>
 
