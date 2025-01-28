@@ -1,9 +1,6 @@
 Игра Наперсики 
 
-<div style="border: 2px solid black; padding: 10px; width: 300px;">
-  <img src="[https://example.com/path/to/your/image.png](https://github.com/bunduqia/naperstki/blob/main/assets/www/fon.png?raw=true)" alt="Моя игра" width="100%">
-</div>
-
+<div class="Box-sc-g0xbh4-0 bDycpP"><img alt="fon.png" src="https://github.com/bunduqia/naperstki/blob/main/assets/www/fon.png?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm"></div>
 
 Одолжи деньги ,выбери ставку, 
 посмотри где шарик, и рискуй
