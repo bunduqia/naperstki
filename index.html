@@ -1284,15 +1284,15 @@
     };
 
     const preloadImages = (urls) => {
-        const images = []; // Массив для хранения объектов Image
+        const images = [];
 
         urls.forEach(url => {
             const img = new Image();
             img.src = url;
-            images.push(img); // Сохраняем объект Image в массиве, чтобы удерживать в памяти
+            images.push(img); 
         });
 
-        return images; // Возвращаем массив изображений
+        return images; 
     };
 
     preloadImages(['assets/www/fon.png', 'assets/www/fon2.png', 'assets/www/fon3.png']);
@@ -1451,7 +1451,7 @@
             const borrowedAmount = Math.floor(Math.random() * 901) + 100;
             playerBalance += borrowedAmount;
             scoreButton.textContent = ` ${playerBalance}`;
-            NotificationManager.showNotification(`ЗАНЯЛ ${playerBalance}`);
+            NotificationManager.showNotification(`займ  ${playerBalance}`);
             updateUIAfterLoss();
         }
     };
