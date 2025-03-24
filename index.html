@@ -860,6 +860,20 @@
     </style>
 </head>
 <body>
+<div id="google_translate_element"></div>
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'ru',
+      autoDisplay: false,
+      includedLanguages: 'en,es,de,fr,it,zh,ar,ja,pt', // добавь нужные языки
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <button id="exit-button" style="position: fixed; bottom: 25px; right: 25px; width: 25px; height: 25px; background: transparent; border: none; cursor: pointer;"></button>
 <div class="cloud">
     <img src="assets/www/cloud01.png" alt="" class="cloud1">
@@ -913,6 +927,32 @@
 </div>
 <button id="exit-button" style="position: fixed; bottom: 25px; right: 25px; width: 25px; height: 25px; background: transparent; border: none; cursor: pointer;"></button>
 <script>
+  async function detectUserCountry() {
+    try {
+      let response = await fetch("https://ipapi.co/json/");
+      let data = await response.json();
+      let countryCode = data.country_code.toLowerCase();
+      
+      let langMap = {
+        'us': 'en', 'gb': 'en', 'de': 'de', 'fr': 'fr', 'es': 'es', 'it': 'it', 
+        'cn': 'zh-CN', 'jp': 'ja', 'ae': 'ar', 'br': 'pt'
+      };
+
+      let userLang = langMap[countryCode] || 'ru';
+      if (userLang !== 'ru') {
+        let select = document.querySelector(".goog-te-combo");
+        if (select) {
+          select.value = userLang;
+          select.dispatchEvent(new Event("change"));
+        }
+      }
+    } catch (error) {
+      console.error("Ошибка определения страны:", error);
+    }
+  }
+
+  window.addEventListener("load", detectUserCountry);
+
     window.addEventListener("resize", function() {
         // Получение нового размера экрана
         const width = window.innerWidth;
