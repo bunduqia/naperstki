@@ -11,6 +11,68 @@
     <meta name="license" content="MIT">
     <style>
 
+/* Скрываем оригинальный баннер Google */
+.goog-te-banner-frame { display: none !important; }
+body { top: 0px !important; }
+
+/* Контейнер виджета */
+#google_translate_element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    padding: 5px 15px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+/* Стилизация выпадающего списка */
+.goog-te-combo {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: white;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.goog-te-combo:hover {
+    border-color: #007bff;
+}
+
+/* Убираем фон при переводе */
+.VIpgJd-ZVi9od-xl07Ob *, 
+.VIpgJd-ZVi9od-vH1Gmf *, 
+.VIpgJd-ZVi9od-l9xktf * {
+    font-family: "Arial", sans-serif !important;
+    font-size: 14px !important;
+    color: #333 !important;
+}
+
+/* Кнопки управления */
+.goog-te-gadget-simple {
+    background: #007bff !important;
+    color: white !important;
+    padding: 8px 12px !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+}
+
+.goog-te-gadget-simple:hover {
+    background: #0056b3 !important;
+}
+
+
+
+
+
+
+        
+
         /* Убираем кнопку "Посмотреть оригинал" */
 .goog-te-balloon-frame {
     display: none !important;
