@@ -1028,37 +1028,14 @@ body {
 </div>
 <button id="exit-button" style="position: fixed; bottom: 25px; right: 25px; width: 25px; height: 25px; background: transparent; border: none; cursor: pointer;"></button>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    let googleTranslateElement = document.getElementById("google_translate_element");
-    if (googleTranslateElement) {
-        googleTranslateElement.style.display = "none";
-    }
-});
-  async function detectUserCountry() {
-    try {
-      let response = await fetch("https://ipapi.co/json/");
-      let data = await response.json();
-      let countryCode = data.country_code.toLowerCase();
-      
-      let langMap = {
-        'us': 'en', 'gb': 'en', 'de': 'de', 'fr': 'fr', 'es': 'es', 'it': 'it', 
-        'cn': 'zh-CN', 'jp': 'ja', 'ae': 'ar', 'br': 'pt'
-      };
-
-      let userLang = langMap[countryCode] || 'ru';
-      if (userLang !== 'ru') {
-        let select = document.querySelector(".goog-te-combo");
-        if (select) {
-          select.value = userLang;
-          select.dispatchEvent(new Event("change"));
+       <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'ru',
+                includedLanguages: 'en,es,fr,de,zh-CN,ja',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
         }
-      }
-    } catch (error) {
-      console.error("Ошибка определения страны:", error);
-    }
-  }
-
-  window.addEventListener("load", detectUserCountry);
 
     window.addEventListener("resize", function() {
         // Получение нового размера экрана
