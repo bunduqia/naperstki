@@ -1023,6 +1023,12 @@
 </div>
 <button id="exit-button" style="position: fixed; bottom: 25px; right: 25px; width: 25px; height: 25px; background: transparent; border: none; cursor: pointer;"></button>
 <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    let googleTranslateElement = document.getElementById("google_translate_element");
+    if (googleTranslateElement) {
+        googleTranslateElement.style.display = "none";
+    }
+});
   async function detectUserCountry() {
     try {
       let response = await fetch("https://ipapi.co/json/");
