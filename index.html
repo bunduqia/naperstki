@@ -10,28 +10,27 @@
     <meta name="version" content="1.0.0">
     <meta name="license" content="MIT">
     <style>
-#google_translate_element {
-    display: none !important;
-}
-        
- /* Скрываем старый интерфейс Google Translate */
-.goog-te-banner-frame,  /* Баннер Google Translate */
+/* Скрываем старый интерфейс Google Translate */
+#google_translate_element, /* Баннер Google Translate */
+.goog-te-banner-frame, /* Основной баннер */
 .goog-te-ftab,  
-#goog-gt-tt,  /* Всплывающее окно перевода */
+#goog-gt-tt, /* Всплывающее окно перевода */
 #goog-gt-vt,  
 .VIpgJd-ZVi9od-ORHb-KE6vqe,  
 .VIpgJd-ZVi9od-LgbsSe,  
 .VIpgJd-ZVi9od-hSRGPd,  
 .VIpgJd-ZVi9od-xl07Ob,  
 .VIpgJd-ZVi9od-vH1Gmf,  
-.VIpgJd-ZVi9od-l9xktf
-        .middle {  
+.VIpgJd-ZVi9od-l9xktf,
+.goog-te-gadget-icon, /* Скрываем иконку переводчика */
+.goog-te-balloon-frame, /* Убираем кнопку "Посмотреть оригинал" */
+#goog-gt-vt, .VIpgJd-yAWNEb-hvhgNd {  
     display: none !important;  
     visibility: hidden !important;  
     opacity: 0 !important;  
     height: 0 !important;  
     width: 0 !important;  
-    overflow: hidden !important;  
+    overflow: hidden !important;
 }
 
 /* Оставляем новый виджет Google Translate */
@@ -43,7 +42,6 @@
     background: #f5f5f5 !important;  
     border: 1px solid #ddd !important;  
 }
-
 
 /* Стилизация выпадающего списка */
 .goog-te-combo {
@@ -88,24 +86,12 @@
 
 
 
+
+
+
+
+
         
-
-        /* Убираем кнопку "Посмотреть оригинал" */
-.goog-te-balloon-frame {
-    display: none !important;
-}
-
-/* Убираем ненужные элементы интерфейса */
-.goog-te-banner-frame, .goog-te-gadget-icon {
-    display: none !important;
-}
-
-/* Скрываем всплывающее окно "Оцените перевод" */
-#goog-gt-vt, .VIpgJd-yAWNEb-hvhgNd {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-}
         /* Запретить масштабирование на мобильных устройствах */
         @viewport {
             zoom: 1;
