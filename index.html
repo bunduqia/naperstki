@@ -10,6 +10,23 @@
     <meta name="version" content="1.0.0">
     <meta name="license" content="MIT">
     <style>
+
+        /* Убираем кнопку "Посмотреть оригинал" */
+.goog-te-balloon-frame {
+    display: none !important;
+}
+
+/* Убираем ненужные элементы интерфейса */
+.goog-te-banner-frame, .goog-te-gadget-icon {
+    display: none !important;
+}
+
+/* Скрываем всплывающее окно "Оцените перевод" */
+#goog-gt-vt, .VIpgJd-yAWNEb-hvhgNd {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
         /* Запретить масштабирование на мобильных устройствах */
         @viewport {
             zoom: 1;
